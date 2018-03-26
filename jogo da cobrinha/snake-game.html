@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Snake Game</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="snake-game.css" />
+    <script src="snake-game.js"></script>
+</head>
+<body>
+    <canvas width="850" height="600" id="canvas" style="border: 1px solid #333;" onclick="snake.game.begin();"/>
+    <div id="controls" style="float: right; text-align: center;">
+        <input type="button" id="pause" value="Play" onclick="snake.game.pause(this);" accesskey="p">
+        <input type="button" id="restart" valuer="Restart" onclick="snake.game.restart();">
+        <br/><br/>
+        <input type="button" id="fullscreen" value="Jogar em tela cheia" onclick="snake.game.fullscreen();">
+        <br/><br/>
+        <div style="font-size: 24px;">
+            Pontos:
+            <span id="pontuacao">0</span>
+        </div>
+    </div>
+</body>
+</html>
