@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        .botao{
+        width:100%;
+        }
+        </style>
+        <script>
+        var primeiro=0;
+        var lastcommand;
+        function escrever(valor)
+        {
+            window.document.tela.screen.value=window.document.tela.screen.value+valor;
+        }
+        function salvavalor(nome)
+        {
+           if(primeiro==0)
+           {
+              primeiro=window.document.tela.screen.value;
+              window.document.tela.screen.value="";
+              lastcommand=nome;
+           }
+           else
+           {
+              switch(lastcommand)
+              {
+              case '+':
+                 window.document.tela.screen.value=eval(primeiro+'+'+window.document.tela.screen.value);
+                 primeiro=window.document.tela.screen.value;
+                 return primeiro;
+                 break;
+              case '-':
+                 window.document.tela.screen.value=primeiro-window.document.tela.screen.value;
+                 primeiro=window.document.tela.screen.value;
+                 return primeiro;
+                 break;
+              case '/':
+                 window.document.tela.screen.value=(primeiro)/(window.document.tela.screen.value);
+                 primeiro=window.document.tela.screen.value;
+                 return primeiro;   
+                 break;
+              case '*':
+                 window.document.tela.screen.value=primeiro*window.document.tela.screen.value;
+                 primeiro=window.document.tela.screen.value; 
+                 return primeiro;      
+                 break;
+              }
+           }
+        }
+        </script>
+        </head>
+        <body>
+        <table valign="middle" align="center" border="1">
+        <tr>
+          <td colspan="4"><form name="tela"><input type="text" size="20" name="screen"><input type="button" value="AC" onClick="primeiro=0;window.document.tela.screen.value='';"></form></td>
+        </tr>
+        <tr>
+          <td><input type="button" onClick="escrever(this.value);" value="1" class="botao"></td>
+          <td><input type="button" value="2" onClick="escrever(this.value);" class="botao"></td>
+          <td><input type="button" value="3" onClick="escrever(this.value);" class="botao"></td>
+          <td><input type="button" value="+" class="botao" OnClick="salvavalor(this.value);"></td>
+        </tr><tr>
+          <td><input type="button" value="4" onClick="escrever(this.value);" class="botao"></td>
+          <td><input type="button" value="5" onClick="escrever(this.value);" class="botao"></td>
+          <td><input type="button" value="6" onClick="escrever(this.value);" class="botao"></td>
+          <td><input type="button" value="-" class="botao" OnClick="salvavalor(this.value);"></td>
+        </tr><tr>
+          <td><input type="button" value="7" onClick="escrever(this.value);" class="botao"></td>
+          <td><input type="button" value="8" onClick="escrever(this.value);" class="botao"></td>
+          <td><input type="button" value="9" onClick="escrever(this.value);" class="botao"></td>
+          <td><input type="button" value="/" class="botao" OnClick="salvavalor(this.value);"></td>
+        </tr><tr>
+          <td><input type="button" value="." onClick="escrever(this.value);" class="botao"></td>
+          <td><input type="button" value="0" onClick="escrever(this.value);" class="botao"></td>
+          <td><input type="button" value="=" class="botao" OnClick="window.document.tela.screen.value=salvavalor(lastcommand);"></td>
+          <td><input type="button" value="*" class="botao" OnClick="salvavalor(this.value);"></td>
+        </tr>
+        </table>
+</body>
+</html>

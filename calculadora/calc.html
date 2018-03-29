@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Full Calculadora</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="calc.css" />
+    <script src="calc.js"></script>
+</head>
+<body>
+    <div id="fullCalc">
+        <div style="width: 300px; text-align: center; margin-left: 8px;" id="results">Full calculadora</div>
+        <table style="width: 250px">
+            <tbody>
+                <tr align="center">
+                    <td class="botao"><input class="btnCalc" value="7" id="7" type="button"></td>
+                    <td class="botao"><input class="btnCalc" value="8" id="8" type="button"></td>
+                    <td class="botao"><input class="btnCalc" value="9" id="9" type="button"></td>
+                    <td class="botao"><input class="btnCalc" value="/" id="divide" type="button"></td>
+                    <td class="botao"><input class="btnCalc" value="(" id="parentesesLeft" type="button"></td>
+                </tr>
+                <tr align="center">
+                    <td class="botao"><input class="btnCalc" value="4" id="4" type="button"></td>
+                    <td class="botao"><input class="btnCalc" value="5" id="3" type="button"></td>
+                    <td class="botao"><input class="btnCalc" value="6" id="2" type="button"></td>
+                    <td class="botao"><input class="btnCalc" value="*" id="multiply" type="button"></td>
+                    <td class="botao"><input class="btnCalc" value=")" id="parentesesRight" type="button"></td>
+                </tr>
+                <tr align="center">
+                    <td class="botao"><input class="btnCalc" value="1" id="1" type="button"></td>
+                    <td class="botao"><input class="btnCalc" value="2" id="2" type="button"></td>
+                    <td class="botao"><input class="btnCalc" value="3" id="3" type="button"></td>
+                    <td class="botao"><input class="btnCalc" value="+" id="plus" type="button"></td>
+                    <td class="botao"><input class="btnCalc" value="C" id="clear" type="button"></td>
+                </tr>
+                <tr align="center">
+                    <td class="botao"><input class="btnCalc" value="0" id="0" type="button"></td>
+                    <td class="botao"><input class="btnCalc" value="." id="decimal" type="button"></td>
+                    <td class="botao"><input class="btnCalc" value="-" id="minus" type="button"></td>
+                    <td class="botao"><input class="btnCalc" value="^" id="^" type="button"></td>
+                    <td class="botao"><input class="btnCalc" value="=" id="equals" type="button"></td>
+                </tr>
+                <tr align="center">
+                    <td class="botao"><input class="btnCalc" value="abs" id="abs" type="button"></td>
+                    <td class="botao"><input class="btnCalc" value="sin" id="sin" type="button"></td>
+                    <td class="botao"><input class="btnCalc" value="cos" id="cos" type="button"></td>
+                    <td class="botao"><input class="btnCalc" value="tan" id="tan" type="button"></td>
+                    <td class="botao"><input class="btnCalc" value="del" id="del" type="button"></td>
+                </tr>
+                <tr align="center">
+                    <td class="botao"><input class="btnCalc" value="log10" id="log10" type="button"></td>
+                    <td class="botao"><input class="btnCalc" value="log2" id="log2" type="button"></td>
+                    <td class="botao"><input class="btnCalc" value="ln" id="lc" type="button"></td>
+                    <td class="botao"><input class="btnCalc" value="pi" id="pi" type="button"></td>
+                    <td class="botao"><input class="btnCalc" value="sqrt" id="sqrt" type="button"></td>
+                </tr>                
+            </tbody>
+        </table>
+        <input name="raddeg" value="radians" id="radians_rb" type="radio">
+      Radians <input name="raddeg" value="degrees" checked="checked" id="degrees_rb"
+        type="radio"> degrees </div>
+    </div>
+</body>
+</html>

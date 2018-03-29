@@ -1,0 +1,49 @@
+input{
+font-size:13px;
+font-weight:bold;
+padding:5px;
+margin:5px;	
+	}	
+	
+#fullCalc {
+	font-size: 13px;
+	margin: 0;
+	color: #666;
+	text-shadow: 1px 1px 2px #ffffff;
+	font-weight:bold;
+  font-family: "MuseoSans500Regular", sans-serif;
+}
+#fullCalc  botao{
+	width:20%;
+	font-weight:bold
+	
+	}
+#fullCalc  #results{
+	width:250px;
+	background-color:#CCC;
+	height:20px;
+	margin:5px;
+	padding:3px;	
+	}
+ .btnCalc {
+	border: 0px;
+	cursor:pointer;
+	font-family: "MuseoSans500Regular", sans-serif;
+	text-shadow: 1px 1px 2px #ffffff;
+	color: #666;
+	
+	padding-left: 8px;
+	padding-right: 8px;
+	
+	font-size: 13px;
+	
+	background-repeat: no-repeat;
+    background: #eee;
+    background: -webkit-linear-gradient(#fff, #eee);
+    background: -moz-linear-gradient(top,  #fff,  #eee);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eeeeee');
+	
+	-moz-box-shadow:    0px 1px 3px 0px #bcbcbc, inset 0 0 3px #ffffff;
+	-webkit-box-shadow: 0px 1px 3px 0px #bcbcbc, inset 0 0 3px #ffffff;
+	box-shadow:         0px 1px 3px 0px #bcbcbc, inset 0 0 3px #ffffff;
+}
